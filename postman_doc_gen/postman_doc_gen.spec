@@ -4,7 +4,7 @@ block_cipher = None
 
 
 a = Analysis(['postman_doc_gen.py'],
-             pathex=['/Users/karthsub/Desktop/GitHub/postman-doc-generator/postman-doc-gen/postman_doc_gen'],
+             pathex=['./'],
              binaries=[],
              datas=[('./schemas/schema_2_1_0.json', 'schemas'),
                     ('./templates/index.html', 'templates'),

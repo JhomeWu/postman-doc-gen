@@ -53,6 +53,10 @@ Generate HTML API documentation from a postman collection. You can use this tool
     python postman_doc_gen.py [path/to/collection] -o [path/to/output/folder] 
     ```
 - to create a new executable 
+    Need to use pyinstaller down to 5, because [since PyInstaller 5.0, do not allow using options that have no effect on spec files when building from spec file anymore](https://github.com/pyinstaller/pyinstaller/issues/7203)
+    ```
+    pip install pyinstaller==4.10
+    ```
     ```
     pyinstaller -F postman_doc_gen.spec postman_doc_gen.py
     ```
